@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { seoData } from '../seo';
 
-export default function SEOWrapper({ children }) {
+export function SEOWrapper({ children }) {
   const location = useLocation();
   const seo = seoData[location.pathname] || seoData['/'];
 
