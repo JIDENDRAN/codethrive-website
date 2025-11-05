@@ -7,6 +7,7 @@ import About from './pages/About'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
 import { AnimatePresence } from "framer-motion"
+import { SEOWrapper } from './components/SEOWrapper';
 
 function App() {
   const location = useLocation()
@@ -14,6 +15,8 @@ function App() {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
+        
+<SEOWrapper>
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
         
@@ -23,6 +26,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         </AnimatePresence>
+        
+</SEOWrapper>
       </main>
       <Footer />
     </div>
