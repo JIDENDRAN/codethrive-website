@@ -10,12 +10,13 @@ export default function Navbar() {
         <div className="flex justify-between h-16 items-center">
 
           {/* Logo */}
-          <Link
-            to="/"
-            className="text-2xl font-bold tracking-wide hover:text-gray-300 transition"
-          >
-            CodeThrive
+          <Link to="/"
+           className="flex items-center gap-2 text-2xl font-bold tracking-wide hover:text-gray-300 transition"
+>
+          <img src="/assets/favicon-dark.png" alt="CodeThrive Logo" className="h-10 w-10 object-contain"/>
+          <span>CodeThrive</span>
           </Link>
+
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 text-base font-medium">

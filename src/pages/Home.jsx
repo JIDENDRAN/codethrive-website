@@ -19,9 +19,11 @@ export default function Home() {
       {/* Background overlay */}
       <div className="relative z-10 w-full max-w-3xl mx-auto px-6 sm:px-10 py-20 sm:py-28 flex justify-center">
         <div className="p-8 sm:p-12 bg-white/95 backdrop-blur-md shadow-2xl rounded-2xl border border-gray-200 max-w-2xl">
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900">
-            CodeThrive Infotech
-          </h2>
+        <h2 className="flex items-center gap-3 text-4xl sm:text-5xl font-extrabold text-gray-900">
+  <img src="/assets/favicon.png" alt="CodeThrive Logo" className="w-25 h-20 " />
+  <span>CodeThrive Infotech</span>
+</h2>
+
     <p className="mt-4 text-base sm:text-lg text-gray-600 ">
       Empowering Businesses with Innovative IT Solutions designed to boost
       performance and drive growth.
