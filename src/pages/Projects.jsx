@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import PageTransition from "../components/PageTransition"
 
 export default function Projects() {
@@ -101,10 +102,10 @@ export default function Projects() {
               <p className="text-gray-700 text-lg">
   Don’t worry — our mentors will help you choose the <strong>best project</strong> based on your skills, interests, and goals.
                 </p>
-                <a href="/contact" className="inline-block mt-4 px-6 py-3 bg-blue-900 text-white font-semibold rounded-lg shadow hover:bg-blue-800 transition"
+                <Link to="/contact" className="inline-block mt-4 px-6 py-3 bg-blue-900 text-white font-semibold rounded-lg shadow hover:bg-blue-800 transition"
                 >
                 👉 Book a FREE project consultation!
-                </a>
+                </Link>
 
             </div>
   
