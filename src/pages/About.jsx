@@ -7,25 +7,72 @@ import PageTransition from "../components/PageTransition"
 export default function About() {
   return (
     <PageTransition>
-    <div className="max-w-6xl mx-auto px-6 py-20">
-      <h2 className="text-3xl font-semibold mb-4">About CodeThrive Infotech</h2>
-      <p className="text-gray-700 leading-relaxed">
-        CodeThrive Infotech helps businesses grow with practical digital solutions.
-        Located in Avinashi, Tiruppur (Tamil Nadu), we specialize in Web & App Development,
-        IT Training, and Software Solutions tailored to your needs.
-      </p>
 
-      <div className="mt-8 grid md:grid-cols-2 gap-6">
-        <div className="p-6 border rounded-lg">
-          <h3 className="font-semibold">Our Mission</h3>
-          <p className="text-gray-600 mt-2">To empower businesses with modern technology and effective training.</p>
+    <section
+      className="min-h-screen py-20 px-6 sm:px-12 bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: "url('/assets/contact.jpeg')", // replace with your image path
+      }}
+    >
+      <div className="max-w-5xl mx-auto bg-white/90 backdrop-blur-sm border border-gray-300 shadow-lg rounded-3xl p-12 sm:p-16">
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-12 text-center">
+          About CodeThrive Infotech
+        </h1>
+
+        {/* Who We Are */}
+        <div className="mb-12">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-700 mb-6">Who We Are</h2>
+          <p className="text-gray-800 text-lg leading-relaxed text-justify">
+            <strong>CodeThrive Infotech</strong> is an{" "}
+            <span className="font-semibold text-gray-700">
+              Ed-Tech-based project and career development company
+            </span>{" "}
+            recognized by the <strong>Government of India</strong>. We
+            specialize in helping students become{" "}
+            <strong>industry-ready professionals</strong> through practical
+            learning, hands-on project experience, and expert mentorship.
+          </p>
+
+          <ul className="mt-6 list-disc list-inside text-gray-800 text-lg space-y-2 text-justify">
+            <li>The <strong>right guidance</strong> to build their future</li>
+            <li><strong>Real-time project experience</strong> for confidence</li>
+            <li>
+              A <strong>clear career direction</strong> to turn skills into
+              success
+            </li>
+          </ul>
         </div>
-        <div className="p-6 border rounded-lg">
-          <h3 className="font-semibold">Our Approach</h3>
-          <p className="text-gray-600 mt-2">Customer-centric development, hands-on training, and ongoing support.</p>
+
+        {/* Mission */}
+        <div className="mb-12">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-700 mb-6">Our Mission</h2>
+          <p className="text-gray-800 text-lg leading-relaxed text-justify">
+            To <strong>empower students</strong> with practical technical
+            skills, <strong>real-world exposure</strong>, and{" "}
+            <strong>career-focused mentorship</strong> that prepare them to
+            thrive in the ever-evolving IT industry.
+          </p>
+        </div>
+
+        {/* Vision */}
+        <div>
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-700 mb-6">Our Vision</h2>
+          <p className="text-gray-800 text-lg leading-relaxed text-justify">
+            To become a <strong>trusted educational partner</strong> bridging
+            the gap between <strong>academics and the IT industry</strong>.
+          </p>
+          <blockquote className="mt-6 border-l-4 border-gray-500 pl-6 italic text-gray-600 text-lg">
+            “Projects build knowledge, skills build careers — we build both.”
+          </blockquote>
         </div>
       </div>
-    </div>
+    </section>
+  
+
+
+
+
+
     </PageTransition>
   )
 }

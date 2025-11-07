@@ -8,6 +8,8 @@ import Services from './pages/Services'
 import Contact from './pages/Contact'
 import { AnimatePresence } from "framer-motion"
 import { SEOWrapper } from './components/SEOWrapper';
+import Projects from "./pages/Projects";
+import FAQ from './pages/FAQ'
 
 function App() {
   const location = useLocation()
@@ -23,6 +25,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/faq" element={<FAQ />} /> 
           <Route path="/contact" element={<Contact />} />
         </Routes>
         </AnimatePresence>
