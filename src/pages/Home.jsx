@@ -93,7 +93,7 @@ export default function Home() {
     </Link>
 
     <Link
-      to="/project"
+      to="/projects"
       className="px-8 py-3 rounded-lg border-2 border-blue-500 text-blue-600 font-semibold 
                  bg-white shadow-sm hover:bg-blue-600 hover:text-white hover:shadow-[0_0_12px_#3B82F6] 
                  transition-all duration-300"
