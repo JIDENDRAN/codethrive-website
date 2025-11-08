@@ -72,37 +72,57 @@ export default function Navbar() {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="md:hidden bg-gray-800 border-t border-gray-700">
-          <Link
-            to="/"
-            className="block px-4 py-3 hover:bg-gray-700 transition"
-            onClick={() => setIsOpen(false)}
-          >
-            Home
-          </Link>
-          <Link
-            to="/about"
-            className="block px-4 py-3 hover:bg-gray-700 transition"
-            onClick={() => setIsOpen(false)}
-          >
-            About
-          </Link>
-          <Link
-            to="/services"
-            className="block px-4 py-3 hover:bg-gray-700 transition"
-            onClick={() => setIsOpen(false)}
-          >
-            Services
-          </Link>
-          <Link
-            to="/contact"
-            className="block px-4 py-3 hover:bg-gray-700 transition"
-            onClick={() => setIsOpen(false)}
-          >
-            Contact
-          </Link>
-        </div>
-      )}
+  <div className="md:hidden bg-gray-800 border-t border-gray-700">
+    <Link
+      to="/"
+      className="block px-4 py-3 hover:bg-gray-700 transition"
+      onClick={() => setIsOpen(false)}
+    >
+      Home
+    </Link>
+
+    <Link
+      to="/about"
+      className="block px-4 py-3 hover:bg-gray-700 transition"
+      onClick={() => setIsOpen(false)}
+    >
+      About
+    </Link>
+
+    <Link
+      to="/services"
+      className="block px-4 py-3 hover:bg-gray-700 transition"
+      onClick={() => setIsOpen(false)}
+    >
+      Services
+    </Link>
+
+    <Link
+      to="/projects"
+      className="block px-4 py-3 hover:bg-gray-700 transition"
+      onClick={() => setIsOpen(false)}
+    >
+      Projects
+    </Link>
+
+    <Link
+      to="/faq"
+      className="block px-4 py-3 hover:bg-gray-700 transition"
+      onClick={() => setIsOpen(false)}
+    >
+      FAQ
+    </Link>
+
+    <Link
+      to="/contact"
+      className="block px-4 py-3 hover:bg-gray-700 transition"
+      onClick={() => setIsOpen(false)}
+    >
+      Contact
+    </Link>
+  </div>
+)}
+
     </nav>
   );
 }
