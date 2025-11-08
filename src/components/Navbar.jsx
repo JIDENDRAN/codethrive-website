@@ -106,8 +106,8 @@ export default function Navbar() {
     >
       FAQ
     </Link>
-
-<Link
+ 
+    <Link
       to="/about"
       className="block px-4 py-3 hover:bg-gray-700 transition"
       onClick={() => setIsOpen(false)}
