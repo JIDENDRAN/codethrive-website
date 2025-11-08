@@ -29,12 +29,11 @@ export default function Navbar() {
             <Link to="/projects" className="hover:text-blue-500 transition">
               Projects
             </Link>
-            <Link to="/about" className="hover:text-gray-300 transition">
-              About Us
-            </Link>
+           
             <Link to="/FAQ" className="hover:text-gray-300 transition">
               FAQ
             </Link>
+            
             <Link to="/contact" className="hover:text-gray-300 transition">
               Contact
             </Link>
@@ -81,14 +80,7 @@ export default function Navbar() {
       Home
     </Link>
 
-    <Link
-      to="/about"
-      className="block px-4 py-3 hover:bg-gray-700 transition"
-      onClick={() => setIsOpen(false)}
-    >
-      About
-    </Link>
-
+    
     <Link
       to="/services"
       className="block px-4 py-3 hover:bg-gray-700 transition"
@@ -111,6 +103,14 @@ export default function Navbar() {
       onClick={() => setIsOpen(false)}
     >
       FAQ
+    </Link>
+
+<Link
+      to="/about"
+      className="block px-4 py-3 hover:bg-gray-700 transition"
+      onClick={() => setIsOpen(false)}
+    >
+      About Us
     </Link>
 
     <Link
