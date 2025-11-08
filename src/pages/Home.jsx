@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+
 import PageTransition from "../components/PageTransition"
 
 
@@ -10,13 +10,7 @@ export default function Home() {
   return (
     <>
      <PageTransition>
-     <Helmet>
-        <title>CodeThrive InfoTech | Web, AI & Cybersecurity Projects</title>
-        <meta
-          name="description"
-          content="We design and build academic & business projects with one-to-one guidance, internships, and placement support."
-        />
-      </Helmet>
+   
     <section
       aria-label="CodeThrive Infotech Home Section"
       className="relative flex items-center justify-center bg-gray-900 bg-cover bg-center bg-no-repeat min-h-[600px]"
