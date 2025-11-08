@@ -16,7 +16,7 @@ const faqData = [
   },
   {
     question: "Do you provide IEEE research papers?",
-    answer: "Yes. We provide:\n- IEEE Paper Guidance\n- Paper formatting & plagiarism check \n- Support for publication",
+    answer: "Yes. We provide:\n- IEEE Paper Guidance\n- Paper formatting & plagiarism check\n- Support for publication",
   },
   {
     question: "Will I get documentation and report?",
@@ -28,7 +28,7 @@ const faqData = [
   },
   {
     question: "Do you offer internships?",
-    answer: "Yes. We provide internships in all domains with certificates",
+    answer: "Yes. We provide internships in all domains with certificates.",
   },
   {
     question: "Do you provide partial payments?",
@@ -61,55 +61,52 @@ export default function FAQ() {
 
   return (
     <PageTransition>
-         <section className="min-h-screen py-16 bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4">
+      <section className="min-h-screen bg-gray-50 py-12 sm:py-16 md:py-20">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
 
-      
+          {/* Why Students Choose Us */}
+          <div className="mb-12 mt-10 text-center">
+            <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+              Why Students Choose Us
+            </h1>
+            <ul className="list-disc text-gray-700 text-base sm:text-lg md:text-xl max-w-3xl mx-auto space-y-3 sm:space-y-4 text-left pl-5">
+              <li>One-to-one project guidance</li>
+              <li>Live project support</li>
+              <li>We explain every line of code</li>
+              <li>Placement-oriented training programs</li>
+              <li>Countless successful projects</li>
+            </ul>
+          </div>
 
- {/* Top Feature Section */}
-<div className="mb-12  mt-10 text-center">
-  <h1 className="text-4xl font-bold text-gray-900 mb-6">
-    Why Students Choose Us
-  </h1>
-  <ul className="list-disc text-gray-700 text-2xl max-w-3xl mx-auto space-y-4 text-left">
-    <li>One-to-one project guidance</li>
-    <li>Live project support</li>
-    <li>We explain every line of code</li>
-    <li>Placement-oriented training programs</li>
-    <li>Countless successful projects</li>
-  </ul>
-</div>
+          {/* FAQ Header */}
+          <h1 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-8 sm:mb-12">
+            ❓ Frequently Asked Questions
+          </h1>
 
+          {/* FAQ List */}
+          <div className="bg-white rounded-2xl shadow-lg p-5 sm:p-8 space-y-4">
+            {faqData.map((faq, index) => (
+              <div key={index} className="border-b border-gray-200 pb-2">
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="w-full flex justify-between items-center text-left text-base sm:text-lg font-medium text-blue-700 py-2"
+                >
+                  {faq.question}
+                  <span className="ml-2 text-gray-500 text-lg sm:text-xl">
+                    {openIndex === index ? "−" : "+"}
+                  </span>
+                </button>
+                {openIndex === index && (
+                  <p className="text-gray-700 mt-1 text-sm sm:text-base whitespace-pre-line leading-relaxed">
+                    {faq.answer}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
 
-        {/* FAQ Header */}
-        <h1 className="text-4xl font-bold text-center text-gray-900 mb-10">
-          ❓ Frequently Asked Questions
-        </h1>
-
-        {/* FAQ List */}
-        <div className="bg-white rounded-xl shadow-md p-6 space-y-3">
-          {faqData.map((faq, index) => (
-            <div key={index} className="border-b border-gray-200 pb-2">
-              <button
-                onClick={() => toggleFAQ(index)}
-                className="w-full flex justify-between items-center text-left text-lg font-medium text-blue-600 py-1"
-              >
-                {faq.question}
-                <span className="ml-2 text-gray-500">
-                  {openIndex === index ? "−" : "+"}
-                </span>
-              </button>
-              {openIndex === index && (
-                <p className="text-gray-700 mt-1 text-sm whitespace-pre-line">
-                  {faq.answer}
-                </p>
-              )}
-            </div>
-          ))}
         </div>
-
-      </div>
-    </section>
+      </section>
     </PageTransition>
   );
 }
