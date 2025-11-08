@@ -32,8 +32,10 @@ export default function Navbar() {
            
             <Link to="/FAQ" className="hover:text-gray-300 transition">
               FAQ
+            </Link> 
+            <Link to="/about" className="hover:text-gray-300 transition">
+              About Us
             </Link>
-            
             <Link to="/contact" className="hover:text-gray-300 transition">
               Contact
             </Link>
