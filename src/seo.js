@@ -1,6 +1,6 @@
 export const seoData = {
     '/': {
-      title: 'CodeThrive Infotech | Web & Cybersecurity Solutions',
+      title: 'CodeThrive InfoTech | Web, AI & Cybersecurity Project Experts',
       description: 'Professional web, app, AI, cybersecurity, and cloud solutions.',
     },
     '/about': {
