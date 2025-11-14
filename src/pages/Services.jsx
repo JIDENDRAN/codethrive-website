@@ -50,7 +50,7 @@ export default function Services() {
       <div className="relative">
 
         {/* Page Header */}
-        <div className="max-w-5xl mx-auto px-6 py-12 text-center">
+        <div className="max-w-5xl mx-auto px-6 bg-gray-200 py-12 text-center">
           <h1 className="text-5xl font-bold mt-18 text-gray-900 mb-4">🌟 Our Services</h1>
           <p className="text-gray-700 text-lg">
             Empowering students and professionals with hands-on learning, real-time projects, and career-ready skills.

@@ -61,7 +61,7 @@ export default function FAQ() {
 
   return (
     <PageTransition>
-      <section className="min-h-screen bg-gray-50 py-12 sm:py-16 md:py-20">
+      <section className="min-h-screen bg-gray-200 py-12 sm:py-16 md:py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
 
           {/* Why Students Choose Us */}

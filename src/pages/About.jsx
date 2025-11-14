@@ -9,10 +9,8 @@ export default function About() {
     <PageTransition>
 
     <section
-      className="min-h-screen py-20 px-6 sm:px-12 bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: "url('/assets/contact.jpeg')", // replace with your image path
-      }}
+      className="min-h-screen py-20 px-6 sm:px-12 bg-gray-200 bg-cover bg-center bg-no-repeat"
+    
     >
       <div className="max-w-5xl mx-auto bg-white/90 backdrop-blur-sm border border-gray-300 shadow-lg rounded-3xl p-12 sm:p-16">
         <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-12 text-center">
