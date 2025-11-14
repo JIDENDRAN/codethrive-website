@@ -7,6 +7,7 @@ import Services from './pages/Services'
 import Contact from './pages/Contact'
 import Projects from "./pages/Projects";
 import FAQ from './pages/FAQ'
+import ContactPopup from './components/ContactPopup'
 import { Routes, Route , useLocation} from 'react-router-dom'
 import { AnimatePresence } from "framer-motion"
 import { SEOWrapper } from './components/SEOWrapper';
@@ -18,6 +19,7 @@ function App() {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
+      
         
 <SEOWrapper>
       <AnimatePresence mode="wait">
@@ -34,6 +36,7 @@ function App() {
         
 </SEOWrapper>
       </main>
+      <ContactPopup/>
       <Footer />
     </div>
   )
