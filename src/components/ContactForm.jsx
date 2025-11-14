@@ -10,7 +10,7 @@ export default function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    const phoneNumber = "918754720031" // Replace with your WhatsApp number (country code + number, no '+')
+    const phoneNumber = "918754720031" 
     const text = `📩 *New Contact Form Submission*
 👤 Name: ${form.name}
 📧 Email: ${form.email}

@@ -1,15 +1,16 @@
 import React from 'react'
-import { Routes, Route , useLocation} from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
-import { AnimatePresence } from "framer-motion"
-import { SEOWrapper } from './components/SEOWrapper';
 import Projects from "./pages/Projects";
 import FAQ from './pages/FAQ'
+import { Routes, Route , useLocation} from 'react-router-dom'
+import { AnimatePresence } from "framer-motion"
+import { SEOWrapper } from './components/SEOWrapper';
+
 
 function App() {
   const location = useLocation()
