@@ -173,9 +173,10 @@ export default function ContactPopup() {
               aria-label="Open contact popup"
             >
               {/* Glow ring */}
-              <span className="absolute -inset-1 rounded-full blur-2xl opacity-25 bg-gradient-to-r from-cyan-400 to-sky-500 animate-pulse-slow"></span>
+              <span className="absolute -inset-1 rounded-full blur-2xl opacity-25 bg-gradient-to-r from-cyan-400 to-sky-500 animate-pulse-slow border border-white"></span>
 
               <span className="relative z-10 text-sm font-medium">Contact Us</span>
+
             </motion.button>
           )}
         </AnimatePresence>

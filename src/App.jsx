@@ -11,6 +11,7 @@ import ContactPopup from './components/ContactPopup'
 import { Routes, Route , useLocation} from 'react-router-dom'
 import { AnimatePresence } from "framer-motion"
 import { SEOWrapper } from './components/SEOWrapper';
+import DiscountPopup from './components/DiscountPopup'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
+      <DiscountPopup/>
       <main className="flex-grow">
       
         
