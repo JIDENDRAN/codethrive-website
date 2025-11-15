@@ -8,10 +8,11 @@ import Contact from './pages/Contact'
 import Projects from "./pages/Projects";
 import FAQ from './pages/FAQ'
 import ContactPopup from './components/ContactPopup'
+import DiscountPopup from './components/DiscountPopup'
+import SurveyPopup from './components/SurveyPopup'
 import { Routes, Route , useLocation} from 'react-router-dom'
 import { AnimatePresence } from "framer-motion"
 import { SEOWrapper } from './components/SEOWrapper';
-import DiscountPopup from './components/DiscountPopup'
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         
 </SEOWrapper>
       </main>
+      <SurveyPopup/>
       <ContactPopup/>
       <Footer />
     </div>
