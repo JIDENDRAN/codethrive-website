@@ -19,13 +19,13 @@ export default function Contact() {
 
         <div className="space-y-3">
           <p><strong>Email:</strong> <a href="mailto:codethriveinfotech@gmail.com">codethriveinfotech@gmail.com</a></p>
-          <p><strong> Contact:</strong> <a href="tel:+919787857769">+91 9787857769 </a> <a href="tel:+918754730031">+91 8754720031, </a></p>
-          <p><strong> WhatsApp:</strong> <a href="tel:+919489510499">+91 9489510499</a></p>
+          <p><strong> Contact:</strong> <a href="tel:+919150781685">+91 9150781685, </a><a href="tel:+919787857769">+91 9787857769 </a> </p>
+          <p><strong> WhatsApp:</strong> <a href="tel:+919150781685">+91 9150781685</a></p>
           <p><strong>Location:</strong> Tiruppur, Coimbatore, Madurai, Theni</p>
         </div>
 
         <div className="mt-6">
-          <a href="https://wa.me/919489510499" className="inline-block px-4 py-2 bg-green-500 text-white rounded-md">Chat on WhatsApp</a>
+          <a href="https://wa.me/919150781685" className="inline-block px-4 py-2 bg-green-500 text-white rounded-md">Chat on WhatsApp</a>
         </div>
       </div>
 

@@ -59,7 +59,7 @@ export default function ContactPopup() {
   };
 
   // Share contact details (customize these)
-  const phone = "+918754720031";
+  const phone = "+919150781685";
   const waLink = `https://wa.me/${phone.replace(/\D/g, "")}`;
   const mailto = "mailto:codethriveinfotech@gmail.com";
 
@@ -109,7 +109,7 @@ export default function ContactPopup() {
 
                   {/* Contact lines */}
                   <div className="text-sm text-white/85 mb-3">
-                    <div className="mb-1">📞 <span className="font-medium">+91 87547 20031</span></div>
+                    <div className="mb-1">📞 <span className="font-medium">+91 91507 81685</span></div>
                     <div>✉️ <span className="font-medium">codethriveinfotech@gmail.com</span></div>
                   </div>
 
