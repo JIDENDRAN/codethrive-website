@@ -71,7 +71,7 @@ export default function SurveyPopup() {
   const waMessage = encodeURIComponent(
     `Hi CodeThrive, I need a project.\n${JSON.stringify(answers, null, 2)}`
   );
-  const waLink = `https://wa.me/916382093290?text=${waMessage}`;
+  const waLink = `https://wa.me/919150781685?text=${waMessage}`;
 
   // Fade animation only
   const fade = {

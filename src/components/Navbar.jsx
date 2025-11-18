@@ -13,7 +13,7 @@ export default function Navbar() {
           <Link to="/"
            className="flex items-center gap-2 text-2xl font-bold tracking-wide hover:text-gray-300 transition"
 >
-          <img src="/assets/favicon-dark.png" alt="CodeThrive Logo" className="h-10 w-10 object-contain"/>
+          <img src="/assets/download.png" alt="CodeThrive Logo" className="h-10 w-10 object-contain"/>
           <span>CodeThrive</span>
           </Link>
 
