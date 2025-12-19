@@ -21,6 +21,41 @@ export default function Projects() {
             </p>
           </div>
 
+            {/* Download Project PDFs */}
+            <div className="mt-10 sm:mt-14 mb-16 ">
+                <h3 className="text-2xl sm:text-3xl font-semibold text-gray-700 mb-4">
+                  Download Project Documents
+                </h3>
+
+                <div className="flex flex-col sm:flex-row gap-4">
+                  
+                  {/* PDF 1 */}
+                  <a
+                    href="/assets/CODETHRIVE INFOTECH SOFTWARE TITLES.pdf"
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-5 py-3 bg-blue-700 text-white font-semibold rounded-lg shadow hover:bg-blue-800 transition"
+                  >
+                    Download Software Projects PDF
+                  </a>
+
+                  {/* PDF 2 */}
+                  <a
+                    href="/assets/CODETHRIVE INFOTECH HARDWARE TITLES.pdf"
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center px-5 py-3 bg-green-700 text-white font-semibold rounded-lg shadow hover:bg-green-800 transition"
+                  >
+                    Download Hardware Projects PDF
+                  </a>
+
+                </div>
+              </div>
+
+
+
           {/* Projects List */}
           <div className="space-y-12 sm:space-y-16">
 
@@ -135,6 +170,7 @@ export default function Projects() {
               </Link>
             </div>
 
+          
           </div>
         </div>
       </section>
