@@ -17,6 +17,16 @@ const DiscountPopup = () => {
     }, 1000);
     return () => clearInterval(timer);
   }, []);
+  useEffect(() => {
+    if (!open) return;
+  
+    const autoClose = setTimeout(() => {
+      setOpen(false);
+    }, 3000); // 5 seconds
+  
+    return () => clearTimeout(autoClose);
+  }, [open]);
+  
 
   const formatTime = (secs) => {
     const h = String(Math.floor(secs / 3600)).padStart(2, "0");

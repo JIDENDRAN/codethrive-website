@@ -19,9 +19,9 @@ export default function Contact() {
 
         <div className="space-y-3">
           <p><strong>Email:</strong> <a href="mailto:codethriveinfotech@gmail.com">codethriveinfotech@gmail.com</a></p>
-          <p><strong> Contact:</strong> <a href="tel:+919150781685">+91 9150781685, </a><a href="tel:+919787857769">+91 9787857769 </a> </p>
+          <p><strong> Contact:</strong> <a href="tel:+919150781685">+91 9150781685, </a> </p>
           <p><strong> WhatsApp:</strong> <a href="tel:+919150781685">+91 9150781685</a></p>
-          <p><strong>Location:</strong>  Pappampatti Pirivu, Trichy Road, Coimbatore - 641402</p>
+          <p><strong>Location:</strong> 15/5,1st Floor, Saravana Complex, Pappampatti Pirivu, Trichy Road, Coimbatore - 641402</p>
         </div>
 
         <div className="mt-6">

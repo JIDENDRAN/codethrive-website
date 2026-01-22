@@ -58,7 +58,15 @@ export default function SurveyPopup() {
     const timer = setTimeout(() => setOpen(true), 2000);
     return () => clearTimeout(timer);
   }, []);
-
+ useEffect(() => {
+    if (!open) return;
+  
+    const autoClose = setTimeout(() => {
+      setOpen(false);
+    }, 3000); // 5 seconds
+  
+    return () => clearTimeout(autoClose);
+  }, [open]);
   const handleSelect = (key, value) => {
     setAnswers((prev) => ({ ...prev, [key]: value }));
     if (index < total - 1) {
