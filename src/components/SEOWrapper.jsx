@@ -11,12 +11,22 @@ export function SEOWrapper({ children }) {
       <Helmet>
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
-        <link rel="canonical" href={`https://codethriveinfo.in${location.pathname}`} />
-        {/* Open Graph */}
+        {seo.keywords && <meta name="keywords" content={seo.keywords} />}
+        <link rel="canonical" href={`https://codethriveinfo.vercel.app${location.pathname}`} />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`https://codethriveinfo.vercel.app${location.pathname}`} />
         <meta property="og:title" content={seo.title} />
         <meta property="og:description" content={seo.description} />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content={`https://codethriveinfo.in${location.pathname}`} />
+        <meta property="og:image" content={seo.ogImage} />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={`https://codethriveinfo.vercel.app${location.pathname}`} />
+        <meta property="twitter:title" content={seo.title} />
+        <meta property="twitter:description" content={seo.description} />
+        <meta property="twitter:image" content={seo.ogImage} />
       </Helmet>
       {children}
     </>
