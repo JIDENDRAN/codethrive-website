@@ -1,7 +1,7 @@
 const { SitemapStream, streamToPromise } = require('sitemap');
 const { writeFileSync } = require('fs');
 
-const hostname = 'https://codethriveinfo.vercel.app'; // your domain
+const hostname = 'https://project.codethriveinfotech.in'; // your domain
 const urls = [
   { url: '/', changefreq: 'weekly', priority: 1.0 },
   { url: '/about', changefreq: 'monthly', priority: 0.8 },
