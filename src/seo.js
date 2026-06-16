@@ -35,4 +35,10 @@ export const seoData = {
     keywords: 'CodeThrive Coimbatore Address, IT Training near Trichy Road, Project Center near me, WhatsApp for Project Help, Book Free Project Consultation Coimbatore, CodeThrive Phone Number, Reach Out to Mentor, Career Guidance Contact Coimbatore',
     ogImage: 'https://project.codethriveinfotech.in/og-banner.png'
   },
+  '/verify': {
+    title: 'Organization Verification | CodeThrive InfoTech Official Status',
+    description: 'Verify the official registration, AICTE partnership status, and MSME Udyam approvals of CodeThrive InfoTech.',
+    keywords: 'CodeThrive Verification, AICTE Registered Organization, MSME Registered Enterprise, Udyam Verification, CodeThrive InfoTech Status, Verify CodeThrive, Legal Registrations CodeThrive',
+    ogImage: 'https://project.codethriveinfotech.in/og-banner.png'
+  },
 };

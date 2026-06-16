@@ -7,6 +7,7 @@ import Services from './pages/Services'
 import Contact from './pages/Contact'
 import Projects from "./pages/Projects";
 import FAQ from './pages/FAQ'
+import Verify from './pages/Verify'
 import ContactPopup from './components/ContactPopup'
 import DiscountPopup from './components/DiscountPopup'
 import SurveyPopup from './components/SurveyPopup'
@@ -33,6 +34,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/faq" element={<FAQ />} /> 
+          <Route path="/verify" element={<Verify />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         </AnimatePresence>

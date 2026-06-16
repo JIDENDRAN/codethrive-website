@@ -36,6 +36,9 @@ export default function Navbar() {
             <Link to="/about" className="hover:text-gray-300 transition">
               About Us
             </Link>
+            <Link to="/verify" className="hover:text-gray-300 transition">
+              Verify
+            </Link>
             <Link to="/contact" className="hover:text-gray-300 transition">
               Contact
             </Link>
@@ -113,6 +116,14 @@ export default function Navbar() {
       onClick={() => setIsOpen(false)}
     >
       About Us
+    </Link>
+
+    <Link
+      to="/verify"
+      className="block px-4 py-3 hover:bg-gray-700 transition"
+      onClick={() => setIsOpen(false)}
+    >
+      Verify
     </Link>
 
     <Link

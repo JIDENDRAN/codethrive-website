@@ -9,6 +9,7 @@ const urls = [
   { url: '/projects', changefreq: 'monthly', priority: 0.9 },
   { url: '/faq', changefreq: 'monthly', priority: 0.7 },
   { url: '/contact', changefreq: 'monthly', priority: 0.8 },
+  { url: '/verify', changefreq: 'monthly', priority: 0.8 },
 ];
 
 (async () => {
